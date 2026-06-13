@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prodAI — Автоматизация маркетинга и продаж</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .star-filled {
+            fill: #3b82f6;
+            color: #3b82f6;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">prodAI</div>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#services" class="text-gray-700 hover:text-blue-600 transition">Услуги</a>
+                <a href="#advantages" class="text-gray-700 hover:text-blue-600 transition">Преимущества</a>
+                <a href="#reviews" class="text-gray-700 hover:text-blue-600 transition">Отзывы</a>
+                <a href="#contacts" class="text-gray-700 hover:text-blue-600 transition">Контакты</a>
+                <a href="#contacts" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">Связаться</a>
+            </div>
+        </div>
+    </nav>
+
+    <section style="background-image:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600');background-size:cover;background-position:center;background-attachment:fixed;" data-aos="fade-up">
+        <div style="background:rgba(255,255,255,0.9);min-height:100vh;display:flex;align-items:center;">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-5xl md:text-7xl font-extrabold text-gray-900 mb-6 leading-tight">Автоматизация продаж<br>без лишних усилий</h1>
+                <p class="text-xl md:text-2xl text-gray-700 mb-10 max-w-3xl mx-auto">Забудьте про возню с маркетологами и отмазки отдела продаж. Наблюдайте за поступлением денег на счёт без траты нервов, времени и усилий</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contacts" class="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition shadow-lg">Запустить воронку</a>
+                    <a href="#services" class="bg-white text-blue-600 border-2 border-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition">Узнать подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" style="background-image:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600');background-size:cover;background-position:center;background-attachment:fixed;" data-aos="fade-up">
+        <div style="background:rgba(255,255,255,0.95);padding:96px 0;">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-900">Наши услуги</h2>
+                <p class="text-center text-gray-600 text-lg mb-16 max-w-2xl mx-auto">Комплексные решения для автоматизации вашего бизнеса</p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="100">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                            <i data-lucide="trending-up" class="text-blue-600 w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">Маркетинговая воронка</h3>
+                        <p class="text-gray-600">Настройка автоматической системы привлечения клиентов с рекламных каналов до покупки</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="200">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                            <i data-lucide="zap" class="text-blue-600 w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">Автоматизация продаж</h3>
+                        <p class="text-gray-600">CRM-системы, чат-боты и автоответчики для обработки заявок 24/7 без участия менеджеров</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                            <i data-lucide="laptop" class="text-blue-600 w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">Email и SMS рассылки</h3>
+                        <p class="text-gray-600">Сегментированные автоматические рассылки для прогрева и возврата клиентов</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="100">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                            <i data-lucide="users" class="text-blue-600 w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">Лидогенерация</h3>
+                        <p class="text-gray-600">Настройка рекламных кампаний в Яндекс, Google, соцсетях для привлечения целевых клиентов</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="200">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                            <i data-lucide="briefcase" class="text-blue-600 w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">Аналитика и отчёты</h3>
+                        <p class="text-gray-600">Прозрачная система аналитики с понятными дашбордами и автоматическими отчётами</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                            <i data-lucide="award" class="text-blue-600 w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">Консультации и поддержка</h3>
+                        <p class="text-gray-600">Полное сопровождение проекта и обучение вашей команды работе с системой</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="advantages" style="background-image:url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600');background-size:cover;background-position:center;background-attachment:fixed;" data-aos="fade-up">
+        <div style="background:rgba(255,255,255,0.92);padding:96px 0;">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-900">Почему выбирают нас</h2>
+                <p class="text-center text-gray-600 text-lg mb-16 max-w-2xl mx-auto">Мы создаём системы, которые работают на вас круглосуточно</p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="bg-blue-600 w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <i data-lucide="clock" class="text-white w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">Экономия времени</h3>
+                        <p class="text-gray-600">Автоматизация освобождает вас от рутинных задач. Вы сосредотачиваетесь на развитии бизнеса</p>
+                    </div>
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                        <div class="bg-blue-600 w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <i data-lucide="shield" class="text-white w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">Прозрачность процессов</h3>
+                        <p class="text-gray-600">Полный контроль и аналитика на каждом этапе воронки. Вы всегда знаете, что происходит</p>
+                    </div>
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bg-blue-600 w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <i data-lucide="trending-up" class="text-white w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">Рост продаж</h3>
+                        <p class="text-gray-600">Автоматическая обработка лидов увеличивает конверсию в 2-3 раза без найма персонала</p>
+                    </div>
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="bg-blue-600 w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <i data-lucide="check-circle" class="text-white w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">Под ключ</h3>
+                        <p class="text-gray-600">Мы делаем всё за вас: от стратегии до внедрения и настройки всех инструментов</p>
+                    </div>
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                        <div class="bg-blue-600 w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <i data-lucide="heart" class="text-white w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">Индивидуальный подход</h3>
+                        <p class="text-gray-600">Каждый бизнес уникален. Мы создаём решения под ваши задачи и специфику ниши</p>
+                    </div>
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bg-blue-600 w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <i data-lucide="crown" class="text-white w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">Гарантия результата</h3>
+                        <p class="text-gray-600">Работаем до результата. Если система не окупается — дорабатываем бесплатно</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" style="background-image:url('https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1600');background-size:cover;background-position:center;background-attachment:fixed;" data-aos="fade-up">
+        <div style="background:rgba(255,255,255,0.94);padding:96px 0;">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-900">Отзывы клиентов</h2>
+                <p class="text-center text-gray-600 text-lg mb-16 max-w-2xl mx-auto">Истории успеха наших партнёров</p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center mb-6">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200" alt="Александр" class="w-16 h-16 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-900">Александр Петров</h4>
+                                <p class="text-gray-600 text-sm">Владелец интернет-магазина, Москва</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-4">
+                            <i data-lucide="star" class="star-filled w-5 h-5"></i>
+                            <i data-lucide="star" class="star-filled w-5 h-5"></i>
+                            <i data-lucide="star" class="star-filled w-5 h-5"></i>
+                            <i data-lucide="star" class="star-filled w-5 h-5"></i>
+                            <i data-lucide="star" class="star-filled w-5 h-5"></i>
+                        </div>
+                        <p class="text-gray-700">Раньше тратил 80% времени на контроль менеджеров и маркетологов. Сейчас воронка работает сама — лиды приходят, обрабатываются автоматически, конверсия выросла в 2,5 раза. Освободилось время на стратегию!</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex items-center mb-6">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200" alt="Елена" class="w-16 h-16 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-900">Елена Соколова</h4>
+                                <p class="text-gray-600 text-sm">Директор учебного центра, Санкт-Петербург</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-4">
+                            <i data-lucide="star" class="star-filled w-5 h-5"></i>
+                            <i data-lucide="star" class="star-filled w-5 h-5"></i>
+                            <i data-lucide="star" class="star-filled w-5 h-5"></i>
+                            <i data-lucide="star" class="star-filled w-5 h-5"></i>
+                            <i data-lucide="star" class="star-filled w-5 h-5"></i>
+                        </div>
+                        <p class="text-gray-700">Запустили автоворонку для набора на курсы. За первый месяц заявок стало в 3 раза больше, а стоимость привлечения студента снизилась на 40%. Команда prodAI сделала всё быстро и профессионально!</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                        <div class="flex items-center mb-6">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200" alt="Дмитрий" class="w-16 h-16 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-900">Дмитрий Ковалёв</h4>
+                                <p class="text-gray-600 text-sm">Основатель стартапа, Казахстан</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-4">
+                            <i data-lucide="star" class="star-filled w-5 h-5"></i>
+                            <i data-lucide="star" class="star-filled w-5 h-5"></i>
+                            <i data-lucide="star" class="star-filled w-5 h-5"></i>
+                            <i data-lucide="star" class="star-filled w-5 h-5"></i>
+                            <i data-lucide="star" class="star-filled w-5 h-5"></i>
+                        </div>
+                        <p class="text-gray-700">У нас маленькая команда, поэтому нанимать маркетолога и отдел продаж было не по карману. prodAI настроили нам систему, которая заменила целый отдел. Теперь продажи идут автоматически!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" style="background-image:url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1600');background-size:cover;background-position:center;background-attachment:fixed;" data-aos="fade-up">
+        <div style="background:rgba(255,255,255,0.96);padding:96px 0;">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-900">Свяжитесь с нами</h2>
+                <p class="text-center text-gray-600 text-lg mb-16 max-w-2xl mx-auto">Готовы автоматизировать ваш бизнес? Оставьте заявку и получите бесплатную консультацию</p>
+                <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                    <div>
+                        <div class="mb-8">
+                            <div class="flex items-center mb-6">
+                                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                    <i data-lucide="phone" class="text-blue-600 w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600 text-sm">Телефон</p>
+                                    <a href="tel:+77073697167" class="text-xl font-semibold text-gray-900 hover:text-blue-600 transition">+7 707 369 71 67</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-6">
+                                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                    <i data-lucide="mail" class="text-blue-600 w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600 text-sm">Email</p>
+                                    <a href="mailto:info@prodai.kz" class="text-xl font-semibold text-gray-900 hover:text-blue-600 transition">info@prodai.kz</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-6">
+                                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                    <i data-lucide="calendar" class="text-blue-600 w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600 text-sm">Режим работы</p>
+                                    <p class="text-xl font-semibold text-gray-900">Пн-Пт: 9:00 - 18:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-blue-50 p-6 rounded-xl">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Бесплатная консультация</h3>
+                            <p class="text-gray-700 mb-4">Расскажем, как автоматизация увеличит ваши продажи и сэкономит время</p>
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-gray-700">
+                                    <i data-lucide="check-circle" class="text-blue-600 w-5 h-5 mr-2"></i>
+                                    <span>Анализ вашей ниши</span>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i data-lucide="check-circle" class="text-blue-600 w-5 h-5 mr-2"></i>
+                                    <span>План воронки продаж</span>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i data-lucide="check-circle" class="text-blue-600 w-5 h-5 mr-2"></i>
+                                    <span>Прогноз окупаемости</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-xl">
+                        <form>
+                            <div class="mb-6">
+                                <label class="block text-gray-700 font-semibold mb-2">Ваше имя</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600" placeholder="Иван Иванов">
+                            </div>
+                            <div class="mb-6">
+                                <label class="block text-gray-700 font-semibold mb-2">Телефон</label>
+                                <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600" placeholder="+7 (___) ___-__-__">
+                            </div>
+                            <div class="mb-6">
+                                <label class="block text-gray-700 font-semibold mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600" placeholder="example@mail.com">
+                            </div>
+                            <div class="mb-6">
+                                <label class="block text-gray-700 font-semibold mb-2">Расскажите о вашем бизнесе</label>
+                                <textarea class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 h-32" placeholder="Чем занимаетесь и какие задачи хотите решить"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transition shadow-lg">Получить консультацию</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="text-3xl font-bold text-blue-400 mb-4">prodAI</div>
+                    <p class="text-gray-400">Автоматизация маркетинга и продаж для вашего бизнеса</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Разделы</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Услуги</a></li>
+                        <li><a href="#advantages" class="text-gray-400 hover:text-white transition">Преимущества</a></li>
+                        <li><a href="#reviews" class="text-gray-400 hover:text-white transition">Отзывы</a></li>
+                        <li><a href="#contacts" class="text-gray-400 hover:text-white transition">Контакты</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Контакты</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i> +7 707 369 71 67</li>
+                        <li class="flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2"></i> info@prodai.kz</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 prodAI. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script>
+        AOS.init({ 
+            duration: 900, 
+            once: true, 
+            easing: 'ease-out-cubic' 
+        }); 
+        lucide.createIcons();
+    </script>
+
+<div id="lang-sw" style="position:fixed;top:80px;right:20px;z-index:9999;display:flex;gap:4px;background:rgba(0,0,0,0.55);padding:6px 8px;border-radius:8px;"><button onclick="setLang('ru')" id="btn-ru" style="padding:4px 10px;border-radius:4px;border:none;background:#fff;color:#000;cursor:pointer;font-weight:700;font-size:12px;">RU</button><button onclick="setLang('kz')" id="btn-kz" style="padding:4px 10px;border-radius:4px;border:none;background:transparent;color:#fff;cursor:pointer;font-weight:700;font-size:12px;">KZ</button></div>
+<script>
+const _KZ={"Полное сопровождение проекта и обучение вашей команды работе с системой": "Жобаны толық қолдау және сізің командасын системамен жұмыс істеуге оқыту", "Основатель стартапа, Казахстан": "Стартап негіздеушісі, Қазақстан", "Автоматизация маркетинга и продаж для вашего бизнеса": "Сіздің бизнесіңіз үшін маркетинг және сатылымдарды автоматтандыру", "Почему выбирают нас": "Неге бізді таңдайды", "Автоматизация освобождает вас от рутинных задач. Вы сосредотачиваетесь на развитии бизнеса": "Автоматтандыру сізді қарапайым істерінен босатады. Сіз бизнесті дамытуға назар аударасыз", "&copy; 2024 prodAI. Все права защищены.": "&copy; 2024 prodAI. Барлық құқықтар сақталған.", "Полный контроль и аналитика на каждом этапе воронки. Вы всегда знаете, что происходит": "Құйма түтіктің әр сатысында толық бақылау және талдау. Сіз әрқашан не болып жатқанын білесіз", "Готовы автоматизировать ваш бизнес? Оставьте заявку и получите бесплатную консультацию": "Өз бизнесіңізді автоматтандыруға дайынсыз ба? Өтінімді қалдырыңыз және тегін консультация алыңыз", "Настройка автоматической системы привлечения клиентов с рекламных каналов до покупки": "Рекламалық арнайлардан сатылымға дейін клиенттерді тартудың автоматты жүйесін орнату", "Email и SMS рассылки": "Email және SMS рассылкалар", "Отзывы клиентов": "Клиенттердің пікірлері", "Прогноз окупаемости": "Ластану болжамы", "Ваше имя": "Сіздің атыңыз", "Прозрачная система аналитики с понятными дашбордами и автоматическими отчётами": "Түсінікті панельдер және автоматты есептемелері бар ашық аналитика жүйесі", "Под ключ": "Түлік түбінде", "Узнать подробнее": "Толығырақ біліңіз", "Расскажите о вашем бизнесе": "Өз бизнесіңіз туралы айтыңыз", "info@prodai.kz": "info@prodai.kz", "Елена Соколова": "Елена Соколова", "Мы делаем всё за вас: от стратегии до внедрения и настройки всех инструментов": "Біз сіз үшін барлық істеме қоямыз: стратегиядан барлық құралдарын енгіздуге және орнатуға дейін", "Дмитрий Ковалёв": "Дмитрий Ковалёв", "Владелец интернет-магазина, Москва": "Интернет-дүкеннің иесі, Мәскеу", "Email": "Email", "Отзывы": "Пікірлер", "Бесплатная консультация": "Тегін консультация", "Директор учебного центра, Санкт-Петербург": "Оқу орталығының директоры, Санкт-Петербург", "Забудьте про возню с маркетологами и отмазки отдела продаж. Наблюдайте за поступлением денег на счёт без траты нервов, времени и усилий": "Маркетологтармен ауырлықтау және сатылым бөлімінің құмарлықтарын ұмытыңыз. Нерв, уақыт және күш сарындамай-ақ есепке түскен ақша құйылуын бақылаңыз", "CRM-системы, чат-боты и автоответчики для обработки заявок 24/7 без участия менеджеров": "CRM-жүйелері, чат-ботлары және өтініміерді 24/7 өңдеу үшін менеджерлердің қатысысыз автоответчиктері", "Автоматизация продаж": "Сатылымдарды автоматтандыру", "Консультации и поддержка": "Консультациялар және қолдау", "Контакты": "Контактілер", "Пн-Пт: 9:00 - 18:00": "Дс-Жм: 9:00 - 18:00", "Сегментированные автоматические рассылки для прогрева и возврата клиентов": "Клиенттерді жылыту және қайтару үшін сегментталған автоматты рассылкалар", "Прозрачность процессов": "Процестердің ашықтығы", "Истории успеха наших партнёров": "Біздің серіктестеріміздің табыс оқиғалары", "prodAI — Автоматизация маркетинга и продаж": "prodAI — маркетинг және сатылымдарды автоматтандыру", "Наши услуги": "Біздің қызметтер", "Комплексные решения для автоматизации вашего бизнеса": "Өз бизнесіңізді автоматтандыру үшін кешенді шешімдер", "Маркетинговая воронка": "Маркетинг құйма түтігі", "Настройка рекламных кампаний в Яндекс, Google, соцсетях для привлечения целевых клиентов": "Мақсатты клиенттерді тарту үшін Яндекс, Google, әлеуметтік желіде рекламалық науқамдарын орнату", "Аналитика и отчёты": "Талдау және есептемелер", "Связаться": "Байланысу", "Расскажем, как автоматизация увеличит ваши продажи и сэкономит время": "Автоматтандыру сіздің сатылымыңызды қалай ұлғайтатынын және уақытты сақтап қалатынын айтарымыз", "Каждый бизнес уникален. Мы создаём решения под ваши задачи и специфику ниши": "Әрбір бизнес ерекше. Біз сіздің тапсырмаларыңыз және ниша ерекшеліктеріне арналған шешімдер жасаймыз", "Александр Петров": "Александр Петров", "Услуги": "Қызметтер", "Телефон": "Телефон", "Автоматическая обработка лидов увеличивает конверсию в 2-3 раза без найма персонала": "Лидтерді автоматты өңдеу персоналды жалдамай-ақ конверсияны 2-3 есе ұлғайтады", "prodAI": "prodAI", "Режим работы": "Жұмыс режимі", "Работаем до результата. Если система не окупается — дорабатываем бесплатно": "Нәтижеге дейін жұмыс істейміз. Егер жүйе ластанбаса - бесплатты түзетеміз", "План воронки продаж": "Сатылым құйма түтігінің жоспары", "Преимущества": "Артықшылықтар", "Лидогенерация": "Лид генерациясы", "Получить консультацию": "Консультация алу", "Мы создаём системы, которые работают на вас круглосуточно": "Біз сіз үшін тәулік бойы жұмыс істейтін жүйелер жасаймыз", "Свяжитесь с нами": "Бізге хабарласыңыз", "без лишних усилий": "қосымша ынамсыз", "Гарантия результата": "Нәтиженің кепілдігі", "Анализ вашей ниши": "Өз ниша талдауы", "Разделы": "Бөлімдер", "Рост продаж": "Сатылымдарының өсуі", "Экономия времени": "Уақытты сақтау", "Индивидуальный подход": "Жеке тәсіл", "Запустить воронку": "Құйма түтігін іске қосу"};
+function setLang(l){
+  if(l==="kz"){
+    document.querySelectorAll("*").forEach(el=>{
+      if(!el.children.length&&el.textContent.trim()){
+        const ru=el.textContent.trim();
+        if(_KZ[ru]){el.dataset.ru=ru;el.textContent=_KZ[ru];}
+      }
+    });
+  } else {
+    document.querySelectorAll("[data-ru]").forEach(el=>{
+      el.textContent=el.dataset.ru;
+    });
+  }
+  document.getElementById("btn-ru").style.cssText=
+    l==="ru"?"padding:4px 10px;border-radius:4px;border:none;background:#fff;color:#000;cursor:pointer;font-weight:700;font-size:12px;"
+           :"padding:4px 10px;border-radius:4px;border:none;background:transparent;color:#fff;cursor:pointer;font-weight:700;font-size:12px;";
+  document.getElementById("btn-kz").style.cssText=
+    l==="kz"?"padding:4px 10px;border-radius:4px;border:none;background:#fff;color:#000;cursor:pointer;font-weight:700;font-size:12px;"
+           :"padding:4px 10px;border-radius:4px;border:none;background:transparent;color:#fff;cursor:pointer;font-weight:700;font-size:12px;";
+  localStorage.setItem("site_lang",l);
+}
+window.addEventListener("load",()=>{
+  const s=localStorage.getItem("site_lang");
+  if(s)setLang(s);
+});
+</script>
+</body>
+</html>
